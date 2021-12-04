@@ -43,4 +43,4 @@ jobs:
         run: npm install -g surge
         
       - name: Deployment On Surge
-        run: surge ./build https://bootcamp2020-project3-ziyadbaig.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build bootcamp2020-project3-ziyadbaig.surge.sh --token ${{secrets.SURGE_TOKEN}}
