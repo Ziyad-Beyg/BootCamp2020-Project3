@@ -35,7 +35,7 @@ function ProductDetails() {
                         <img width='100%' height='100%' src={ShoeInfo.img} />
                     </Box>
                     <Box component="div" sx={[styles.ProductDetails, { minWidth: '200px', fontSize: '16px', padding: '20px', width: '45%', margin: '10px', display: 'flex', flexDirection: 'column', justifyContent: 'start' }]}>
-                        <Typography variant="h3" sx={{ fontWeight: '900', marginBottom: '40px' }} component="div" gutterBottom>
+                        <Typography variant="h3" sx={{ fontWeight: '900', marginBottom: '40px', color:'steelBlue' }} component="div" gutterBottom>
                             {ShoeInfo.name}
                         </Typography>
                         <Typography variant="subtitle1" gutterBottom component="div">
@@ -67,6 +67,10 @@ const styles = {
     productImg: {
         ['@media (max-width:868px)']: {
             width: '100%',
+            // height: '50vh'
+        },
+        ['@media (max-width:400px)']: {
+            height: '50vh'
         }
     },
     ProductDetails: {
